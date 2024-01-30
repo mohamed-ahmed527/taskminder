@@ -1,0 +1,15 @@
+<header class="mx-auto mt-4 lg:flex flex-nowrap items-center justify-between">
+  <div class="sm:w-full lg:w-9/12 mb-4 lg:mb-0 relative">
+    <input
+    [(ngModel)] = "enteredSearchValue"
+    (input)="onSearchTextChange()"
+    type="text"
+    placeholder="Search For Tasks"
+    class="w- py-2 px-4 border border-1 rounded-md w-full">
+    <span class="absolute top-2 right-4 "><i class="fi fi-rs-search"></i></span>
+  </div>
+  <div class="user mx-right flex justify-between lg:justify-around items-center">
+    <span class="mr-2">{{user.username}}</span>
+    <img src="./../../../../../assets/pic.jpg" alt="avatar-img" class="w-8 h-8 rounded-full">
+  </div>
+</header>
